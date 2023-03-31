@@ -9,7 +9,10 @@ FUNÇÃO DA TELA: ADICIONAR NOVO USUÁRIO.
 */
 import React, { useState, useRef, } from 'react'
 import axios from 'axios'
-import { Container, ContainerImage, ContainerItems, Headline, Label, Input, Button, User } from "./style"
+import { Container, ContainerImage, Label, Input,} from "./style"
+import  Button  from '../../components/Button'
+import ContainerItens from '../../components/ContainerItens'
+import  Headline  from '../../components/Title'
 import People from '../../assets/peoples2.svg'
 import Arrow from '../../assets/arrow.svg'
 import { useHistory } from 'react-router-dom'
@@ -46,7 +49,7 @@ const App = () => {
     <Container>
       <ContainerImage alt="Peoples" src={People} />
 
-      <ContainerItems>
+      <ContainerItens>
         <Headline>Olá</Headline>
 
         <Label>Nome</Label>
@@ -56,7 +59,7 @@ const App = () => {
 
         <Button onClick={addNewUser}>Cadastrar <img alt='arrow' src={Arrow} /></Button>
 
-      </ContainerItems>
+      </ContainerItens>
     </Container>
 
   )

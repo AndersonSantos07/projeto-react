@@ -20,30 +20,11 @@ export const ContainerImage = styled.img`
 `
 
 export const ContainerItems = styled.div`
-    display:flex;
-    flex-direction: column;
-    padding:50px 36px;
-    background: linear-gradient(157.44deg, rgba(255, 255, 255, 0.6) 0.84%, rgba(255, 255, 255, 0.6) 0.85%, rgba(255, 255, 255, 0.15) 100%);
-    backdrop-filter: blur(22.5px);
-    border-radius: 61px 61px 0px 0px;
-    height: 100vh;
-    min-height:calc(100vh - 170px);
-    overflow:auto;
-
-    &::-webkit-scrollbar{
-        width:10px;
-        border-radius:100px;
-    }
-    &::-webkit-scrollbar-track {
-        background: purple;
-        border-radius:100px;      
-    }
-
-    &::-webkit-scrollbar-thumb {
-        background-color: blue;   
-        border-radius: 61px;     
-        border: 1px solid blue;
-    }
+  
+   
+    
+  
+   
 `
 export const Headline = styled.h1`
     font-weight: 700;
@@ -54,44 +35,6 @@ export const Headline = styled.h1`
     text-align: center;
 `
 
-
-export const Button = styled.button`
-
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    gap:15px;
-    margin-top:70px;
-
-    text-decoration: none;
-
-    background: transparent;
-    border: 1px solid #FFFFFF;
-    border-radius: 14px;
-    width: 342px;
-    height: 74px;
-    min-height:74px;
-    font-weight: 700;
-    font-size: 17px;
-    line-height: 28px;
-    color: #FFFFFF;
-    text-align: center;
-    cursor:pointer;
-
-    &:hover{
-        opacity:0.8
-    }
-
-    &:active{
-
-        opacity:0.5;
-    }
-
-    img{
-        transform:rotateY(180deg);
-    }
-
-`
 
 export const User = styled.li`
     display:flex;

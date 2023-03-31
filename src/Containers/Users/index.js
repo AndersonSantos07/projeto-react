@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-import { Container, ContainerImage, ContainerItems, Headline, Button, User } from "./style"
+import { Container, ContainerImage, User } from "./style"
+import Button from '../../components/Button'
+import ContainerItens from '../../components/ContainerItens'
+import Headline from '../../components/Title'
 import People from '../../assets/peoples1.svg'
 import Arrow from '../../assets/arrow.svg'
 import Trash from '../../assets/trash.svg'
@@ -52,7 +55,7 @@ const Users = () => {
     <Container>
       <ContainerImage alt="Peoples" src={People} />
 
-      <ContainerItems>
+      <ContainerItens newStyle={true}>
         <Headline>Usuários</Headline>
 
 
@@ -64,8 +67,8 @@ const Users = () => {
             </User>)}
         </ul>
 
-        <Button onClick={backPage}><img alt='arrow' src={Arrow} /> Voltar </Button>
-      </ContainerItems>
+        <Button newStyle={true} onClick={backPage}><img alt='arrow' src={Arrow} /> Voltar </Button>
+      </ContainerItens>
     </Container>
 
   )
